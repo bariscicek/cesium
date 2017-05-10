@@ -11,7 +11,8 @@ define([
     './loadArrayBuffer',
     './RuntimeError',
     './TaskProcessor',
-    './throttleRequestByServer'
+    './throttleRequestByServer',
+    '../ThirdParty/pako_inflate'
 ], function(
     when,
     appendForwardSlash,
@@ -24,7 +25,8 @@ define([
     loadArrayBuffer,
     RuntimeError,
     TaskProcessor,
-    throttleRequestByServer) {
+    throttleRequestByServer,
+    pako) {
     'use strict';
 
     /**
